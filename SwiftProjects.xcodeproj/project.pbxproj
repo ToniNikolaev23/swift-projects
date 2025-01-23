@@ -25,6 +25,9 @@
 		B5B6A7832D4135FD00B6ABC5 /* SpotifyRecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7822D4135FD00B6ABC5 /* SpotifyRecentsCell.swift */; };
 		B5B6A7852D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7842D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift */; };
 		B5B6A7872D41812400B6ABC5 /* ImageTitleRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7862D41812400B6ABC5 /* ImageTitleRowCell.swift */; };
+		B5B6A7892D428AD600B6ABC5 /* SpotifyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7882D428AD600B6ABC5 /* SpotifyPlaylistView.swift */; };
+		B5B6A78B2D428AF600B6ABC5 /* PlaylistHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */; };
+		B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		B5B6A7822D4135FD00B6ABC5 /* SpotifyRecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentsCell.swift; sourceTree = "<group>"; };
 		B5B6A7842D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleaseCell.swift; sourceTree = "<group>"; };
 		B5B6A7862D41812400B6ABC5 /* ImageTitleRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleRowCell.swift; sourceTree = "<group>"; };
+		B5B6A7882D428AD600B6ABC5 /* SpotifyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistView.swift; sourceTree = "<group>"; };
+		B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCell.swift; sourceTree = "<group>"; };
+		B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDescriptionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B5B6A77B2D40282800B6ABC5 /* SpotifyHomeView.swift */,
+				B5B6A7882D428AD600B6ABC5 /* SpotifyPlaylistView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -131,9 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				B5B6A77D2D40299A00B6ABC5 /* SpotifyCategoryCell.swift */,
+				B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */,
 				B5B6A7822D4135FD00B6ABC5 /* SpotifyRecentsCell.swift */,
 				B5B6A7842D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift */,
 				B5B6A7862D41812400B6ABC5 /* ImageTitleRowCell.swift */,
+				B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -230,14 +239,17 @@
 				B5B6A7812D402AB400B6ABC5 /* Category.swift in Sources */,
 				B5B6A77E2D40299A00B6ABC5 /* SpotifyCategoryCell.swift in Sources */,
 				B5B6A7852D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift in Sources */,
+				B5B6A78B2D428AF600B6ABC5 /* PlaylistHeaderCell.swift in Sources */,
 				B5B6A76D2D3E8DF300B6ABC5 /* DatabaseHelper.swift in Sources */,
 				B5B6A77C2D40282800B6ABC5 /* SpotifyHomeView.swift in Sources */,
 				B5B6A7872D41812400B6ABC5 /* ImageTitleRowCell.swift in Sources */,
+				B5B6A7892D428AD600B6ABC5 /* SpotifyPlaylistView.swift in Sources */,
 				B5B6A7592D3E85A000B6ABC5 /* ContentView.swift in Sources */,
 				B5B6A7572D3E85A000B6ABC5 /* SwiftProjectsApp.swift in Sources */,
 				B5B6A76B2D3E8C6400B6ABC5 /* Constants.swift in Sources */,
 				B5B6A7832D4135FD00B6ABC5 /* SpotifyRecentsCell.swift in Sources */,
 				B5B6A76F2D3E9F2A00B6ABC5 /* Product.swift in Sources */,
+				B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */,
 				B5B6A7712D3E9F4500B6ABC5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
