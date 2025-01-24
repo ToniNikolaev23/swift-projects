@@ -28,6 +28,7 @@
 		B5B6A7892D428AD600B6ABC5 /* SpotifyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7882D428AD600B6ABC5 /* SpotifyPlaylistView.swift */; };
 		B5B6A78B2D428AF600B6ABC5 /* PlaylistHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */; };
 		B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */; };
+		B5B6A78F2D44209A00B6ABC5 /* SongRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78E2D44209A00B6ABC5 /* SongRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B5B6A7882D428AD600B6ABC5 /* SpotifyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistView.swift; sourceTree = "<group>"; };
 		B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCell.swift; sourceTree = "<group>"; };
 		B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDescriptionCell.swift; sourceTree = "<group>"; };
+		B5B6A78E2D44209A00B6ABC5 /* SongRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				B5B6A78C2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift */,
 				B5B6A7822D4135FD00B6ABC5 /* SpotifyRecentsCell.swift */,
 				B5B6A7842D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift */,
+				B5B6A78E2D44209A00B6ABC5 /* SongRowCell.swift */,
 				B5B6A7862D41812400B6ABC5 /* ImageTitleRowCell.swift */,
 				B5B6A78A2D428AF600B6ABC5 /* PlaylistHeaderCell.swift */,
 			);
@@ -249,6 +252,7 @@
 				B5B6A76B2D3E8C6400B6ABC5 /* Constants.swift in Sources */,
 				B5B6A7832D4135FD00B6ABC5 /* SpotifyRecentsCell.swift in Sources */,
 				B5B6A76F2D3E9F2A00B6ABC5 /* Product.swift in Sources */,
+				B5B6A78F2D44209A00B6ABC5 /* SongRowCell.swift in Sources */,
 				B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */,
 				B5B6A7712D3E9F4500B6ABC5 /* User.swift in Sources */,
 			);
