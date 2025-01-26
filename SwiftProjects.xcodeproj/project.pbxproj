@@ -31,6 +31,10 @@
 		B5B6A78F2D44209A00B6ABC5 /* SongRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A78E2D44209A00B6ABC5 /* SongRowCell.swift */; };
 		B5B6A7942D4511BB00B6ABC5 /* BumbleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7932D4511BB00B6ABC5 /* BumbleHomeView.swift */; };
 		B5B6A7962D4514E000B6ABC5 /* BumbleFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7952D4514E000B6ABC5 /* BumbleFilterView.swift */; };
+		B5B6A7982D46C3C800B6ABC5 /* BumbleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7972D46C3C800B6ABC5 /* BumbleCardView.swift */; };
+		B5B6A79A2D46C5B400B6ABC5 /* BumbleHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7992D46C5B300B6ABC5 /* BumbleHeartView.swift */; };
+		B5B6A79C2D46CD0600B6ABC5 /* InterestedPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A79B2D46CD0600B6ABC5 /* InterestedPillView.swift */; };
+		B5B6A79E2D46CE3000B6ABC5 /* InterestedPillGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A79D2D46CE3000B6ABC5 /* InterestedPillGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		B5B6A78E2D44209A00B6ABC5 /* SongRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowCell.swift; sourceTree = "<group>"; };
 		B5B6A7932D4511BB00B6ABC5 /* BumbleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHomeView.swift; sourceTree = "<group>"; };
 		B5B6A7952D4514E000B6ABC5 /* BumbleFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleFilterView.swift; sourceTree = "<group>"; };
+		B5B6A7972D46C3C800B6ABC5 /* BumbleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleCardView.swift; sourceTree = "<group>"; };
+		B5B6A7992D46C5B300B6ABC5 /* BumbleHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHeartView.swift; sourceTree = "<group>"; };
+		B5B6A79B2D46CD0600B6ABC5 /* InterestedPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedPillView.swift; sourceTree = "<group>"; };
+		B5B6A79D2D46CE3000B6ABC5 /* InterestedPillGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedPillGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				B5B6A7952D4514E000B6ABC5 /* BumbleFilterView.swift */,
+				B5B6A7972D46C3C800B6ABC5 /* BumbleCardView.swift */,
+				B5B6A79B2D46CD0600B6ABC5 /* InterestedPillView.swift */,
+				B5B6A7992D46C5B300B6ABC5 /* BumbleHeartView.swift */,
+				B5B6A79D2D46CE3000B6ABC5 /* InterestedPillGridView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -270,7 +282,9 @@
 			files = (
 				B5B6A7692D3E880800B6ABC5 /* ImageLoaderView.swift in Sources */,
 				B5B6A7812D402AB400B6ABC5 /* Category.swift in Sources */,
+				B5B6A79C2D46CD0600B6ABC5 /* InterestedPillView.swift in Sources */,
 				B5B6A77E2D40299A00B6ABC5 /* SpotifyCategoryCell.swift in Sources */,
+				B5B6A7982D46C3C800B6ABC5 /* BumbleCardView.swift in Sources */,
 				B5B6A7852D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift in Sources */,
 				B5B6A7942D4511BB00B6ABC5 /* BumbleHomeView.swift in Sources */,
 				B5B6A78B2D428AF600B6ABC5 /* PlaylistHeaderCell.swift in Sources */,
@@ -285,6 +299,8 @@
 				B5B6A76F2D3E9F2A00B6ABC5 /* Product.swift in Sources */,
 				B5B6A7962D4514E000B6ABC5 /* BumbleFilterView.swift in Sources */,
 				B5B6A78F2D44209A00B6ABC5 /* SongRowCell.swift in Sources */,
+				B5B6A79A2D46C5B400B6ABC5 /* BumbleHeartView.swift in Sources */,
+				B5B6A79E2D46CE3000B6ABC5 /* InterestedPillGridView.swift in Sources */,
 				B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */,
 				B5B6A7712D3E9F4500B6ABC5 /* User.swift in Sources */,
 			);
