@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import SwiftfulUI
 
 struct BumbleHomeView: View {
     @State private var filters: [String] = ["Everyone", "Tranding"]
     @AppStorage("bumble_home_filter") private var selectedFilter = "Everyone"
+    @State private var allUsers: [User] = []
+    @State private var selectedIndex: Int = 0
+    @State private var cardOffsets: [Int: Bool] = [:]
+    @State private var currentSwipeOffset: CGFloat = 0
+    
     var body: some View {
         ZStack {
             Color.bumbleWhite.ignoresSafeArea()
@@ -22,11 +28,58 @@ struct BumbleHomeView: View {
                         Divider(), alignment: .bottom
                     )
                 
-                BumbleCardView()
+//                BumbleCardView()
                 
-                Spacer()
+                ZStack {
+                    if !allUsers.isEmpty {
+                        ForEach(Array(allUsers.enumerated()), id: \.offset) {(index, user) in
+                            
+                            let isPrevious = (selectedIndex - 1) == index
+                            let isCurrent = selectedIndex == index
+                            let isNext = (selectedIndex + 1) == index
+                            
+                            if isPrevious || isCurrent || isNext {
+                                let offsetValue = cardOffsets[user.id]
+                                
+                                userProfileCell(user: user,index: index)
+                                    .zIndex(Double(allUsers.count - index))
+                                    .offset(x: offsetValue == nil ? 0 : offsetValue == true ? 900 : -900)
+                            }
+                          
+                        }
+                     
+                    } else {
+                        ProgressView()
+                    }
+                    
+                    overlaySwipingIndicators
+                        .zIndex(99999)
+                }
+                .frame(maxHeight: .infinity)
+                .animation(.smooth, value: cardOffsets)
+                
             }
             .padding(8)
+        }
+        .task {
+            await getData()
+        }
+        .toolbar(.hidden, for: .navigationBar)
+    }
+    
+    private func userDidSelect(index: Int, isLike: Bool) {
+        let user = allUsers[index]
+        cardOffsets[user.id] = isLike
+        
+        selectedIndex += 1
+    }
+    
+    private func getData() async {
+        guard allUsers.isEmpty else { return }
+        do {
+            allUsers = try await DatabaseHelper().getUsers()
+        } catch {
+            print(error)
         }
     }
     
@@ -67,6 +120,73 @@ struct BumbleHomeView: View {
         .font(.title2)
         .fontWeight(.medium)
         .foregroundStyle(.bumbleBlack)
+    }
+    
+    private func userProfileCell(user: User,index: Int) -> some View {
+        BumbleCardView(
+            user: user,
+            onSuperLikePresed: nil,
+            onXmarkPresed: {
+                userDidSelect(index: index, isLike: false)
+            },
+            onCheckmarkPressed: {
+                userDidSelect(index: index, isLike: true)
+            },
+            onSendComplimentPressed: nil,
+            onHideAndReportPressed: {
+                
+            }
+        )
+            .withDragGesture(
+                .horizontal,
+//                                        minimumDistance: <#T##CGFloat#>,
+                resets: true,
+//                                        animation: <#T##Animation#>,
+                rotationMultiplier: 1.05,
+//                                        scaleMultiplier: <#T##CGFloat#>,
+                onChanged: { dragOffset in
+                    currentSwipeOffset = dragOffset.width
+                },
+                onEnded: { dragOffset in
+                    if dragOffset.width < -50 {
+                        userDidSelect(index: index, isLike: false)
+                    } else if dragOffset.width > 50 {
+                        userDidSelect(index: index, isLike: true)
+                    }
+                }
+            )
+    }
+    
+    private var overlaySwipingIndicators: some View {
+        ZStack {
+            Circle()
+                .fill(.bumbleGray.opacity(0.4))
+                .overlay(
+                    Image(systemName: "xmark")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                )
+                .frame(width: 60, height: 60)
+                .scaleEffect(abs(currentSwipeOffset) > 100 ? 1.5 : 1.0)
+                .offset(x: min(-currentSwipeOffset, 150))
+                .offset(x: -100)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            
+            Circle()
+                .fill(.bumbleGray.opacity(0.4))
+                .overlay(
+                    Image(systemName: "checkmark")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                )
+                .frame(width: 60, height: 60)
+                .scaleEffect(abs(currentSwipeOffset) > 100 ? 1.5 : 1.0)
+                .offset(x: max(-currentSwipeOffset, -150))
+                .offset(x: 100)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+        }
+        .animation(.smooth, value: currentSwipeOffset)
     }
 }
 
