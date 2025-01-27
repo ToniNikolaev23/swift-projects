@@ -139,7 +139,7 @@ struct BumbleHomeView: View {
         )
             .withDragGesture(
                 .horizontal,
-//                                        minimumDistance: <#T##CGFloat#>,
+                minimumDistance: 10,
                 resets: true,
 //                                        animation: <#T##Animation#>,
                 rotationMultiplier: 1.05,
