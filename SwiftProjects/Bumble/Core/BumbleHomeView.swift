@@ -30,7 +30,7 @@ struct BumbleHomeView: View {
                         Divider(), alignment: .bottom
                     )
                 
-//                BumbleCardView()
+                BumbleCardView()
                 
                 ZStack {
                     if !allUsers.isEmpty {
