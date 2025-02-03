@@ -11,6 +11,9 @@
 		B54DD30E2D501551003FC42F /* NetflixMovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD30D2D501551003FC42F /* NetflixMovieDetailsView.swift */; };
 		B54DD3102D501599003FC42F /* NetflixDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD30F2D501599003FC42F /* NetflixDetailsHeaderView.swift */; };
 		B54DD3122D5017ED003FC42F /* NetflixDetailsProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD3112D5017ED003FC42F /* NetflixDetailsProductView.swift */; };
+		B54DD3142D50B0C1003FC42F /* MyListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD3132D50B0C0003FC42F /* MyListButton.swift */; };
+		B54DD3162D50B25C003FC42F /* RateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD3152D50B25C003FC42F /* RateButton.swift */; };
+		B54DD3182D50B514003FC42F /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DD3172D50B514003FC42F /* ShareButton.swift */; };
 		B5B6A7572D3E85A000B6ABC5 /* SwiftProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7562D3E85A000B6ABC5 /* SwiftProjectsApp.swift */; };
 		B5B6A7592D3E85A000B6ABC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6A7582D3E85A000B6ABC5 /* ContentView.swift */; };
 		B5B6A75B2D3E85A100B6ABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B6A75A2D3E85A100B6ABC5 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 		B54DD30D2D501551003FC42F /* NetflixMovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieDetailsView.swift; sourceTree = "<group>"; };
 		B54DD30F2D501599003FC42F /* NetflixDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixDetailsHeaderView.swift; sourceTree = "<group>"; };
 		B54DD3112D5017ED003FC42F /* NetflixDetailsProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixDetailsProductView.swift; sourceTree = "<group>"; };
+		B54DD3132D50B0C0003FC42F /* MyListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListButton.swift; sourceTree = "<group>"; };
+		B54DD3152D50B25C003FC42F /* RateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateButton.swift; sourceTree = "<group>"; };
+		B54DD3172D50B514003FC42F /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		B5B6A7532D3E85A000B6ABC5 /* SwiftProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B6A7562D3E85A000B6ABC5 /* SwiftProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectsApp.swift; sourceTree = "<group>"; };
 		B5B6A7582D3E85A000B6ABC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -250,6 +256,9 @@
 				B5B6A7AE2D4D1C2B00B6ABC5 /* NetflixHeroCell.swift */,
 				B54DD30D2D501551003FC42F /* NetflixMovieDetailsView.swift */,
 				B54DD3112D5017ED003FC42F /* NetflixDetailsProductView.swift */,
+				B54DD3132D50B0C0003FC42F /* MyListButton.swift */,
+				B54DD3172D50B514003FC42F /* ShareButton.swift */,
+				B54DD3152D50B25C003FC42F /* RateButton.swift */,
 				B54DD30F2D501599003FC42F /* NetflixDetailsHeaderView.swift */,
 				B54DD30B2D4EC491003FC42F /* NetflixMovieCell.swift */,
 				B5B6A7AC2D4B5A5400B6ABC5 /* NetflixFilterBarView.swift */,
@@ -345,6 +354,7 @@
 				B5B6A7852D4138F400B6ABC5 /* SpotifyNewReleaseCell.swift in Sources */,
 				B5B6A7942D4511BB00B6ABC5 /* BumbleHomeView.swift in Sources */,
 				B5B6A78B2D428AF600B6ABC5 /* PlaylistHeaderCell.swift in Sources */,
+				B54DD3142D50B0C1003FC42F /* MyListButton.swift in Sources */,
 				B5B6A76D2D3E8DF300B6ABC5 /* DatabaseHelper.swift in Sources */,
 				B5B6A77C2D40282800B6ABC5 /* SpotifyHomeView.swift in Sources */,
 				B5B6A7872D41812400B6ABC5 /* ImageTitleRowCell.swift in Sources */,
@@ -359,6 +369,7 @@
 				B5B6A76F2D3E9F2A00B6ABC5 /* Product.swift in Sources */,
 				B54DD30E2D501551003FC42F /* NetflixMovieDetailsView.swift in Sources */,
 				B54DD30C2D4EC491003FC42F /* NetflixMovieCell.swift in Sources */,
+				B54DD3162D50B25C003FC42F /* RateButton.swift in Sources */,
 				B5B6A7962D4514E000B6ABC5 /* BumbleFilterView.swift in Sources */,
 				B5B6A7AF2D4D1C2B00B6ABC5 /* NetflixHeroCell.swift in Sources */,
 				B5B6A7A02D496B5800B6ABC5 /* BumbleProfileImageCell.swift in Sources */,
@@ -367,6 +378,7 @@
 				B5B6A78F2D44209A00B6ABC5 /* SongRowCell.swift in Sources */,
 				B5B6A7AB2D4B596400B6ABC5 /* NetflixFilterCell.swift in Sources */,
 				B5B6A7A42D496F3E00B6ABC5 /* BumbleChatsView.swift in Sources */,
+				B54DD3182D50B514003FC42F /* ShareButton.swift in Sources */,
 				B5B6A79A2D46C5B400B6ABC5 /* BumbleHeartView.swift in Sources */,
 				B5B6A79E2D46CE3000B6ABC5 /* InterestedPillGridView.swift in Sources */,
 				B5B6A78D2D428DEE00B6ABC5 /* PlaylistDescriptionCell.swift in Sources */,
